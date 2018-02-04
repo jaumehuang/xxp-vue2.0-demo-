@@ -1,0 +1,550 @@
+@charset "UTF-8";
+
+/*          作者：1332204564@qq.com/jaume.huang
+                     时间：2017-10-7
+                      描述：网购样式
+ */
+
+
+/*公共样式--开始*/
+
+
+/*去除默认样式开始*/
+
+html,
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ol,
+form,
+input,
+textarea,
+th,
+td,
+select {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100%;
+	overflow-x: hidden;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;  
+}
+
+body {
+	font-family: "Microsoft YaHei";
+	font-size: 14px;
+	color: #333;
+	background: #f1e9df;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link,
+a:active,
+a:visited,
+a:hover {
+	/* background: none;*/
+	-webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+}
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+input,
+textarea {
+	outline: none;
+	border: none;
+}
+
+input {
+	background: #fff;
+}
+
+textarea {
+	resize: none;
+	overflow: auto;
+}
+
+.inline {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+i {
+	font-size: 0.53125rem;
+}
+
+
+/*去除默认样式结束*/
+
+
+/*公共样式开始*/
+
+* {
+	font-family: PingFangSC-Regular, sans-serif;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.tl {
+	text-align: left;
+}
+
+.tc {
+	text-align: center;
+}
+
+.tr {
+	text-align: right;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	content: ".";
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+
+.ellipse {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.ellipse_two {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+
+/*头部*/
+
+.header {
+	height: 1.375rem;
+	background: #3fb459;
+	padding: 0 0.375rem;
+	display: flex;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.header .loction_city {
+	width: 16%;
+	color: #fff;
+	font-size: 0.46875rem;
+	line-height: 1.375rem;
+}
+
+.header .search_in {
+	width: 83.6%;
+	margin-top: 0.15625rem;
+	height: 1.03125rem;
+	background: #f1e9df;
+	border-radius: 4px;
+}
+
+.header .search_in .search_img {
+	height: 0.5rem;
+	width: 0.5625rem;
+	background: url(../image/search_03.png) no-repeat center;
+	background-size: contain;
+	margin-top: 0.25rem;
+	width: 10%;
+}
+
+.header .search_in .search_text {
+	height: 100%;
+	width: 89%;
+	background: #f1e9df;
+	color: #999;
+	font-size: 0.4375rem;
+	text-align: left;
+}
+
+.header i {
+	font-size: 0.53125rem;
+	color: #fff;
+	line-height: 1.375rem;
+}
+
+.header span {
+	font-size: 0.53125rem;
+	color: #fff;
+	margin: 0 auto;
+	line-height: 1.375rem;
+}
+
+.header .fished {
+	position: absolute;
+	right: 0.375rem;
+}
+
+
+/*尾部*/
+
+footer {
+	background: #fff;
+	position: fixed;
+	z-index: 100;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 0.21875rem 0;
+	border-top: 0.03125rem solid #e5e5e5;
+}
+
+footer .item_li {
+	width: 25%;
+	text-align: center;
+	font-size: 0.34375rem;
+	color: #666666;
+	position:relative;
+}
+
+footer .item_li .show_icon{
+	height: 0.625rem;
+	width: 0.65625rem;
+	margin: 0 auto;
+	
+}
+footer .item_li .home_icon{
+	background:url(../image/home0.png)  no-repeat center;
+	background-size:contain;
+}
+footer .item_li .classify_icon{
+	background:url(../image/classify0.png)  no-repeat center;
+	background-size:contain;
+}
+footer .item_li .cart_icon{
+	background:url(../image/cart0.png)  no-repeat center;
+	background-size:contain;
+}
+footer .item_li .person_icon{
+	background:url(../image/person0.png)  no-repeat center;
+	background-size:contain;
+}
+footer .item_li .title_nav { 
+	margin-top: 0.15625rem;
+}
+
+footer  .active {
+	color: #3fb459;
+}
+footer  .active .home_icon{
+	background:url(../image/home1.png)  no-repeat center;
+	background-size:contain;
+}
+footer  .active .classify_icon{
+	background:url(../image/classify1.png)  no-repeat center;
+	background-size:contain;
+}
+footer  .active .cart_icon{
+	background:url(../image/cart1.png)  no-repeat center;
+	background-size:contain;
+}
+footer  .active .person_icon{
+	background:url(../image/person1.png)  no-repeat center;
+	background-size:contain;
+}
+footer .item_li .num{
+	display: block;
+	height:10px;
+	width:10px;
+	border-radius: 50%;
+	background:#d81e06;
+	position:absolute;
+	right:34%;
+	top:0;
+	display: none;
+}
+
+.container {
+	padding-top: 1.375rem;
+}
+
+
+/*小按钮*/
+
+.btn {
+	color: #fff;
+	margin-left: 1.9375rem;
+	margin-right: 1.9375rem;
+	background: #fe8e04;
+	height: 1.25rem;
+	line-height: 1.25rem;
+	text-align: center;
+	font-size: 0.4375rem;
+	border-radius: 4px;
+}
+
+
+/*金额*/
+
+.red_price {
+	color: #de0d11;
+}
+
+
+/*菜篮子*/
+
+.basket {
+	background: #fff;
+	width: 2.1875rem;
+	height: 2.1875rem;
+	text-align: center;
+	border-radius: 4px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+	position: fixed;
+	bottom: -18%;
+	right: 0.3125rem;
+	z-index: 1000;
+}
+
+.basket img {
+	height: 1.5625rem;
+	height: 1.5625rem;
+	margin-top: 0.4rem;
+}
+
+.basket span {
+	display: block;
+	height: 0.875rem;
+	width: 0.875rem;
+	background: #fe8e04;
+	border-radius: 50%;
+	position: absolute;
+	top: -0.3125rem;
+	right: -0.3125rem;
+	line-height: 0.875rem;
+	text-align: center;
+	color: #fff;
+}
+/*数据加载*/
+.loading_more{
+   text-align: center;
+   font-size:0.375rem;
+   margin-bottom:0.3125rem;
+}
+.loading_more img{
+	
+	 height:0.45rem;
+	 width:0.45rem;
+	 margin:0 auto;
+}
+.null{
+	height:1.5625rem;
+}
+/*规格*/
+.format{
+	background:#fff;
+	padding:0.3125rem 0.375rem;
+	padding-top:0;
+}
+.format .title{
+	font-size:0.4375rem;
+	padding:0.25rem 0;
+	
+}
+.format .format_list .format_li{
+	
+	width:22%;
+	height:0.9375rem;
+	line-height: 0.9375rem;
+	border:0.03125rem solid #e5e5e5;
+	margin-right:2%;
+	text-align: center;
+	border-radius: 4px;
+	font-size:0.375rem;
+	margin-bottom:0.3125rem;
+}
+.format .format_num{
+	font-size:0.375rem;
+	padding:0.3125rem 0;
+	padding-bottom:0;
+}
+.format .format_num .spinner{
+	border:0.03125rem solid #e5e5e5;
+	border-radius: 4px;
+	width:2.5rem;
+	height:0.78125rem;
+	line-height: 0.78125rem;
+	display: flex;
+}
+.format .format_num .spinner div,input{
+	 width:33.33%;
+	 text-align: center;
+	 
+}
+.format .format_num .spinner div i{
+	font-size:0.375rem;
+	color:#333;
+	font-weight:bold;
+	cursor: pointer;
+}
+.format .format_num .spinner input{
+	border-left:0.03125rem solid #e5e5e5;
+	border-right:0.03125rem solid #e5e5e5;
+	height:100%;
+	font-size:0.375rem;
+}
+.format  .btnCancel{
+	margin:0  -0.375rem;
+	padding:0 0.375rem;
+	font-size:0.4375rem;
+	background:#3fb459;
+	height:1.2rem;
+	line-height: 1.2rem;
+	color:#fff;
+	
+}
+.details .format_footer {
+	
+	border-top: 0.03125rem solid #e5e5e5;
+}
+
+.details .format_footer .buyshop,.details .format_footer .addcart {
+	height: 1.4rem;
+	width: 50%;
+	color: #fff;
+	border: none;
+	font-size: 0.4375rem;	
+	line-height:1.4rem;
+	text-align: center;
+}
+.details .format_footer .addcart{
+	background:#fe8700;
+}
+.details .format_footer .cart_img {
+	font-size: 0.34375rem;
+	text-align: center;
+	position:relative;
+}
+
+.details .format_footer .cart_img img {
+	height: 0.5625rem;
+	width: 0.5625rem;
+}
+
+.detail .format_footer .cart_img .cart_p {
+	margin-top: 0.1rem;
+}
+.details .format_footer .cart_img .cart_num{
+	position: absolute;
+	top:0;
+	right:0;
+	display: block;
+	height:0.46875rem;
+	width:0.46875rem;
+	color:#fff;
+	background:#3fb459;
+	border-radius: 50%;
+}
+
+.details .format_footer .buyshop {
+	background: #3fb459;
+}
+
+.details footer .addcart {
+	background: #fe8700;
+}
+/*没有商品*/
+ .null_list {
+	display: none;
+	text-align: center;
+	font-size: 0.4375rem;
+	padding: 2.5rem 0;
+}
+
+.null_list img {
+	width: 3.5625rem;
+	height: 2.6875rem;
+}
+
+ .null_list div {
+	margin-top: 0.3125rem;
+}
+.mask{
+	position:fixed;
+	right:0;
+	left:0;
+	bottom:0;
+	top:0;
+	z-index: 1000;
+	background: rgba(0,0,0,0.5);
+}
+/*返回顶部*/
+.back-top{
+	 position:fixed;
+	 right:2%;
+	 bottom:10%;
+	 display: none;
+}
+.back-top img{
+	
+	height:1.2rem;
+	width:1.2rem;
+}
+/*禁止点击*/
+.disabled { pointer-events: none; }
