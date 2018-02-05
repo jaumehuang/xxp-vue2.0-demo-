@@ -5,8 +5,7 @@
 		<banner></banner>
 		<!--产品列表-->
 		<PrList></PrList>
-		<!--根部-->
-		<foot></foot>
+		
 	</div>
 </template>
 
@@ -14,10 +13,10 @@
 	import { mapState, mapActions } from 'vuex'
 	import banner from '@/components/banner.vue';
 	import PrList from '@/components/list.vue';
-	import foot from '@/components/foot.vue';
+	
 	export default {
     name: 'home',
-    components:{banner,PrList,foot},
+    components:{banner,PrList},
     computed: {
      // Getting Vuex State from store/modules/movie
 
