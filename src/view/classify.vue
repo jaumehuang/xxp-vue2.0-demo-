@@ -2,8 +2,7 @@
 	
 	<div>
 		分类
-		<!--根部-->
-		<foot></foot>
+		
 	</div>
 	
     
@@ -11,10 +10,10 @@
 
 <script>
 	
-	import foot from '@/components/foot.vue';
+	
 	export default {
 		name: 'classify',
-		components:{foot},
+		
 		data() {
 			
 			return {
