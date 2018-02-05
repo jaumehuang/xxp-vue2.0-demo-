@@ -1,8 +1,8 @@
 <template>
 	
 	<div>
-		分类
-		
+		<!--产品列表-->
+		<PrList></PrList>
 	</div>
 	
     
@@ -10,10 +10,10 @@
 
 <script>
 	
-	
+	import PrList from '@/components/list.vue';
 	export default {
 		name: 'classify',
-		
+		components:{PrList},
 		data() {
 			
 			return {
