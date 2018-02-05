@@ -16,10 +16,7 @@
 		components:{PrList},
 		data() {
 			
-			return {
-				
-				nav:['首页','分类','购物车','个人中心']
-			}
+			
 			
 		}
 	}
